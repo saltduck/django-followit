@@ -2,7 +2,7 @@ language: python
 python:
   - "2.7"
 env:
-  - DJANGO=1.6
+  - DJANGO=1.6.8
 install:
   - pip install -q Django==$DJANGO
 before_script:

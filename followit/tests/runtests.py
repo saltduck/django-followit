@@ -1,5 +1,5 @@
 import os, sys
-os.environ['DJANGO_SETTINGS_MODULE'] = 'followit.tests.settings'
+os.environ['DJANGO_SETTINGS_MODULE'] = '.followit.tests.settings'
 from django.test.runner import DiscoverRunner
 failures = DiscoverRunner().run_tests(['tests.FollowerTests',], verbosity = 1)
 if failures:

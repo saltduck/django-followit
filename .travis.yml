@@ -4,11 +4,7 @@ python:
 env:
   - DJANGO=1.6
   - DJANGO=1.6.8
-  - DJANGO=1.7
-  - DJANGO=1.7.1
 install:
   - pip install -q Django==$DJANGO
-before_script:
-  - pwd
 script:
   - python followit/tests/runtests.py

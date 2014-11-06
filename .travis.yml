@@ -5,5 +5,7 @@ env:
   - DJANGO=1.6
 install:
   - pip install -q Django==$DJANGO
+before_script:
+  - pwd
 script:
   - python followit/tests/runtests.py
